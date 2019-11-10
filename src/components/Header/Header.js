@@ -75,9 +75,17 @@ export default function Header(props) {
           )}
         </div>
         <Hidden smDown implementation="css">
+          <div className={classes.logoContainer}>
+          <i className={"fab logo-img"}>
+            <img style={{width:'70px', height:'70px'}} src={require("../../assets/img/logo.jpeg")}/>
+          </i>
           {rightLinks}
+          </div>
         </Hidden>
         <Hidden mdUp>
+          <i className={classes.logo}>
+            <img style={{width:'70px', height:'70px'}} src={require("../../assets/img/logo.jpeg")}/>
+          </i>
           <IconButton
             color="inherit"
             aria-label="open drawer"

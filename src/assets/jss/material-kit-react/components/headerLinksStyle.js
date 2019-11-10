@@ -11,13 +11,17 @@ const headerLinksStyle = theme => ({
     listStyle: "none",
     paddingTop: "0",
     paddingBottom: "0",
-    color: "inherit"
+    color: "inherit",
+    marginRight: "10px"
+  },
+  flexedList:{
+    display: "flex",
+    flexDirection: "row-reverse"
   },
   listItem: {
     float: "left",
     color: "inherit",
     position: "relative",
-    display: "block",
     width: "auto",
     margin: "0",
     padding: "0",
@@ -41,7 +45,7 @@ const headerLinksStyle = theme => ({
     position: "relative",
     padding: "0.9375rem",
     fontWeight: "400",
-    fontSize: "12px",
+    fontSize: "20px",
     textTransform: "uppercase",
     borderRadius: "3px",
     lineHeight: "20px",

@@ -55,18 +55,26 @@ const headerStyle = {
     ...defaultFont,
     lineHeight: "30px",
     fontSize: "18px",
-    borderRadius: "3px",
+    borderRadius: "40px",
     textTransform: "none",
-    color: "inherit",
+    color: "white",
     padding: "8px 16px",
     letterSpacing: "unset",
+    backgroundColor:"#6a12ff",
     "&:hover,&:focus": {
-      color: "inherit",
-      background: "transparent"
+      color: "black",
+      background: "white"
     }
   },
   appResponsive: {
     margin: "20px 10px"
+  },
+  logoContainer:{
+    display:"flex",
+    direction:"rtl"
+  },
+  logo:{
+    flex: "1"
   },
   primary: {
     backgroundColor: primaryColor,

@@ -28,7 +28,9 @@ import SectionLogin from "./Sections/SectionLogin.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
 
+
 import styles from "assets/jss/material-kit-react/views/components.js";
+import recommendations from "../../assets/img/recommendations.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -38,8 +40,8 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="Material Kit React"
-        rightLinks={<HeaderLinks />}
+        brand='צור קשר'
+        rightLinks={<HeaderLinks/>}
         fixed
         color="transparent"
         changeColorOnScroll={{
@@ -48,14 +50,14 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}>
+      <Parallax image={require("assets/img/immanuel.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Material Kit React.</h1>
+                <h1 className={classes.title}>קהילת חב"ד עמנואל</h1>
                 <h3 className={classes.subtitle}>
-                  A Badass Material-UI Kit based on Material Design.
+                  לה בלה בלב בלהב
                 </h3>
               </div>
             </GridItem>
@@ -64,16 +66,17 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
-        <SectionNavbars />
-        <SectionTabs />
-        <SectionPills />
-        <SectionNotifications />
-        <SectionTypography />
-        <SectionJavascript />
-        <SectionCarousel />
-        <SectionCompletedExamples />
-        <SectionLogin />
+        <SectionTypography/>
+
+        {/*<SectionBasics/>*/}
+        {/*<SectionNavbars/>*/}
+        {/*<SectionTabs/>*/}
+        {/*<SectionPills/>*/}
+        {/*<SectionNotifications/>*/}
+        {/*<SectionJavascript/>*/}
+        {/*<SectionCarousel/>*/}
+        <SectionCompletedExamples/>
+        <SectionLogin/>
         <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
             <Button color="primary" size="lg" simple>
@@ -81,10 +84,10 @@ export default function Components(props) {
             </Button>
           </Link>
         </GridItem>
-        <SectionExamples />
-        <SectionDownload />
+        <SectionExamples/>
+        <SectionDownload/>
       </div>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
